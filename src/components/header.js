@@ -7,13 +7,16 @@ export class Header extends Component {
     
       this.state = {
         keywords: ''
-      }
+      }   
     }
+
+    
     
 
     inputChange(e){
         // console.log(e.target.value);
         this.setState({keywords: e.target.value})
+        this.props.newsSearch(e.target.value)
         // console.log(this.state.keywords)
     }
   

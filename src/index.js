@@ -11,18 +11,27 @@ class App extends Component {
       super(props)
     
       this.state = {
-         news:JSONexample
+         news:JSONexample,
+         filtered:JSONexample
       }
     }
     
-  render() {
-    return (
-      <div>
-        <Header/>
-        <NewsList news={this.state.news}/>
-      </div>
-    )
-  }
+    filterNews(keyword){
+        // console.log(keyword)
+        let filtered = this.state.news.filter((item)=>{
+            return item.title.indexOf(keyword) > -1;
+        })
+        this.setState({filtered: filtered})
+    }
+
+    render() {
+        return (
+        <div>
+            <Header newsSearch={keywords=>this.filterNews(keywords)}/>
+            <NewsList news={this.state.filtered}/>
+        </div>
+        )
+    }
 }
 
 ReactDOM.render(<App/>,document.querySelector('#root'));
