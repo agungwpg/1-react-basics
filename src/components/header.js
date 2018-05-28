@@ -1,16 +1,27 @@
 import React, { Component } from 'react'
 
 export class Header extends Component {
-  
+    
+    constructor(props) {
+      super(props)
+    
+      this.state = {
+        keywords: ''
+      }
+    }
+    
+
     inputChange(e){
-        console.log(e.target.value);
+        // console.log(e.target.value);
+        this.setState({keywords: e.target.value})
+        // console.log(this.state.keywords)
     }
   
     render() {
     const styles = {
         header:{
             background: '#03a9f4',
-            textAlign:'center'
+            textAlign:'center',
         },
         logo:{
             color: '#fff',
@@ -26,13 +37,14 @@ export class Header extends Component {
 
     return (
       <header style={styles.header}>
-          <div 
+        <div 
             style={styles.logo}
             onClick={()=>{console.log('clicked')}}
             >Logo</div>
-          <input
+        <input
             style={styles.input}
-            onChange={this.inputChange}/>
+            onChange={this.inputChange.bind(this)}/>
+       
       </header>
     )
   }
