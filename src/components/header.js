@@ -44,7 +44,7 @@ export class Header extends Component {
         <input
             style={styles.input}
             onChange={this.inputChange.bind(this)}/>
-       
+        
       </header>
     )
   }

@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "title": "New ES6 upgrade available",
+        "feed": "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eum totam cumque corporis odit, expedita accusantium esse libero officiis architecto."
+    },
+    {
+        "id":2,
+        "title": "The importance of React in the development",
+        "feed": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eum totam cumque corporis odit, expedita accusantium esse libero officiis architecto."
+    },
+    {
+        "id":3,
+        "title": "React developers going on strike",
+        "feed": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eum totam cumque corporis odit, expedita accusantium esse libero officiis architecto."
+    },
+    {
+        "id":4,
+        "title": "Say what again. I dare you, ...",
+        "feed": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eum totam cumque corporis odit, expedita accusantium esse libero officiis architecto."
+    },
+    {
+        "id":5,
+        "title": "New ES6 upgrade available",
+        "feed": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eum totam cumque corporis odit, expedita accusantium esse libero officiis architecto."
+    }
+]
